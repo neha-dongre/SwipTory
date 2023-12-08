@@ -34,7 +34,7 @@ app.use((err, req, res, next) => {
 });
 
 console.log("Before MongoDB connection");
-mongoose.connect('mongodb+srv://admin_dd:admin1234@cluster.hj3pr8j.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGODB_URL)
   .then(() => {
     console.log("Db connected");
 
