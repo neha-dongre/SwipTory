@@ -100,14 +100,15 @@ const Form = (props) => {
           value={props.postData.slides[props.activeSlideIndex - 1].category}
         >
           <option value="">Select</option>
-          <option value="Education">Education</option>
-          <option value="Fashion">Fashion</option>
-          <option value="Fitness">Fitness</option>
+          <option value="Medical">Medical</option>
+          <option value="Fruits">Fruits</option>
+          <option value="World">World</option>
+          <option value="India">India</option>
           <option value="Food">Food</option>
-          <option value="Movie">Movie</option>
-          <option value="Music">Music</option>
-          <option value="Sports">Sports</option>
+          <option value="Health and Fitness">Fitness</option>
           <option value="Travel">Travel</option>
+          <option value="Movie">Movie</option>
+         <option value="Education">Education</option>
         </select>
       </div>
     </div>
