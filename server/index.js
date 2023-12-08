@@ -34,12 +34,7 @@ app.use((err, req, res, next) => {
 });
 
 console.log("Before MongoDB connection");
-mongoose
-    
-  .connect('mongodb+srv://admin_dd:admin1234@cluster.hj3pr8j.mongodb.net/?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+mongoose.connect('mongodb+srv://admin_dd:admin1234@cluster.hj3pr8j.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
     console.log("Db connected");
 
